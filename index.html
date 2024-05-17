@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktiv Toolbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-animation">
+        <video autoplay loop muted playsinline>
+            <source src="4kwallocean.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+    </div>
+    <div class="toolbar" id="toolbar">
+        <button class="toggle-btn" id="ranking-btn" onclick="toggleButton('ranking-btn')">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 12H22L12 2Z" fill="currentColor"/>
+                <path d="M2 12L12 22L22 12H2Z" fill="currentColor"/>
+            </svg>
+            Ranking
+        </button>
+        <button class="toggle-btn" id="btn2" onclick="toggleButton('btn2')">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 12H22L12 2Z" fill="currentColor"/>
+                <path d="M2 12L12 22L22 12H2Z" fill="currentColor"/>
+            </svg>
+        </button>
+        <button class="toggle-btn" id="btn3" onclick="toggleButton('btn3')">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 12H22L12 2Z" fill="currentColor"/>
+                <path d="M2 12L12 22L22 12H2Z" fill="currentColor"/>
+            </svg>
+        </button>
+        <button class="toggle-btn" id="btn4" onclick="toggleButton('btn4')">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 12H22L12 2Z" fill="currentColor"/>
+                <path d="M2 12L12 22L22 12H2Z" fill="currentColor"/>
+            </svg>
+        </button>
+    </div>
+    <audio id="click-sound" src="button-click.mp3"></audio>
+    <div class="dynamic-content" id="dynamic-content"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
